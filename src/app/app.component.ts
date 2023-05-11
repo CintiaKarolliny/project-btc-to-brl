@@ -23,6 +23,8 @@ export class AppComponent {
     return this.bitcoinService.currentPrice;
   }
 
+  autoSaveInterval: number = setInterval(() => this.update(), 60000);
+
   update() {
     this.bitcoinService.update();
   }

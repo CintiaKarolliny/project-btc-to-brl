@@ -6,7 +6,7 @@ export class TempService {
 
   timer = setInterval(() => {
     this.counter = this.counter + 1;
-  }, 100);
+  }, 1000);
   counter: number = 0;
 
   getSeconds() {

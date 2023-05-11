@@ -5,9 +5,6 @@
   <hr />
   <h2>Timer: {{ this.tempService.getSeconds() }}s</h2>
   <div>
-    <input type="button" value="Atualizar" (click)="update()" />
-    <br />
-    <br />
     <span
       >Atualizado em {{ this.bitcoinService.lastUpdate | date: 'full' }}</span
     >
